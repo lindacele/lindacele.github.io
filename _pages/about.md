@@ -17,7 +17,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello, I am Linda and 26 years old, at the moment I am a student at XXX University. 
+My name Is Linda I am a 25 year olds traveling and discovering the world while figuring out daily life.
 
+In my free time I love to paint , spend time with my friends and petting every animal I can find. 
 
-In my free time I like to painting, go to the gym, read, and cook.
+I am currently in University studying my 5th semester in International Management.

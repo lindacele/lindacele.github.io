@@ -2,7 +2,7 @@
 layout: page
 title: Gallery
 permalink: /gallery/
-description: A growing collection of your cool gallery.
+description: A growing collection of my paintings.
 nav: true
 nav_order: 2
 horizontal: false
@@ -181,7 +181,7 @@ horizontal: false
           {% include figure.html path="assets/img/gallery_5.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/gallery_3.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/gallery_7.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
   </div>
 
@@ -190,7 +190,7 @@ horizontal: false
           {% include figure.html path="assets/img/gallery_4.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/gallery_2.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/gallery_3.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
       <div class="col-sm mt-3 mt-md-0">
           {% include figure.html path="assets/img/gallery_6.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}

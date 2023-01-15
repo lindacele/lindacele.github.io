@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: blog
 pagination:
   enabled: true
   collection: posts
@@ -20,7 +20,6 @@ pagination:
     <h2>{{ site.blog_description }}</h2>
   </div>
 
-  <!--
   {% if site.display_tags %}
   <div class="tag-list">
     <ul class="p-0 m-0">
@@ -35,8 +34,7 @@ pagination:
     </ul>
   </div>
   {% endif %}
-  -->
-  
+
   <ul class="post-list">
     {% for post in paginator.posts %}
 

@@ -1,8 +1,8 @@
 ---
 layout: cv
-permalink: /assets/pdf/example_pdf.pdf
+permalink: /assets/pdf/linda_cv.pdf
 title: CV
 nav: true
 nav_order: 4
-cv_pdf: example_pdf.pdf
+cv_pdf: linda_cv.pdf
 ---

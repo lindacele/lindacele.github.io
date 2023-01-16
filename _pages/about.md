@@ -17,7 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-My name Is Linda I am a 25 year olds traveling and discovering the world while figuring out daily life.
+My name ss Linda. I am 25 year old traveling and discovering the world while figuring out daily life.
 
 In my free time I love to paint , spend time with my friends and petting every animal I can find. 
 

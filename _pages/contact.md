@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: A contact form, with which you could reach me out.
+description: A contact form, with which you could reach out to me.
 nav: true
 nav_order: 4
 horizontal: false

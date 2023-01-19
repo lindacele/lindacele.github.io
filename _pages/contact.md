@@ -9,7 +9,7 @@ horizontal: false
 ---
 
 <style>
-    #fcf-form {
+#fcf-form {
     display:block;
 }
 
@@ -75,10 +75,14 @@ textarea.fcf-form-control {
 }
 
 label.fcf-label {
+    color: #000000;
     display: inline-block;
     margin-bottom: 0.5rem;
 }
 
+.fcf-h3{
+    color: #000000;
+}
 .fcf-credit {
     padding-top: 10px;
     font-size: 0.9rem;

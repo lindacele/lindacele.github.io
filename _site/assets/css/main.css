@@ -19,6 +19,7 @@
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #ffffff;
   --global-blog-title-color: #ffffff;
+  --blog-hashtag-color: #000000;
 }
 :root .fa-sun {
   display: none;
@@ -49,6 +50,7 @@ html[data-theme=dark] {
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
   --global-blog-title-color: #000000;
+  --blog-hashtag-color: #ffffff;
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
@@ -118,7 +120,7 @@ table td {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: var(--blog-hashtag-color);
 }
 a:hover, table.table a:hover {
   color: var(--global-theme-color);

@@ -16,6 +16,7 @@
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
   --global-blog-title-color: #{$white-color};
+  --blog-hashtag-color: #{$black-color};
 
   .fa-sun {
     display : none;
@@ -48,6 +49,7 @@ html[data-theme='dark'] {
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
   --global-blog-title-color: #{$black-color};
+  --blog-hashtag-color: #{$white-color};
 
   .fa-sun {
     padding-left: 10px;

@@ -287,11 +287,39 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 </style>
 
 <script>
+function sendMail(name, email, subject, message) {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Access-Control-Allow-Origin", "*");
+  myHeaders.set('Authorization', 'Basic ' + btoa('55d4c22155e43bb73c857bcb53a08f36'+":" +'77112a6b25b0de031d5c43a20ecd0297'));
+
+  const data = JSON.stringify({
+    "Messages": [{
+      "From": {"Email": "jxde8428082@163.com", "Name": "<YOUR NAME>"},
+      "To": [{"Email": email, "Name": name}],
+      "Subject": subject,
+      "TextPart": message
+    }]
+  });
+
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: data,
+  };
+
+  fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+
 const form_obj = {
   receiver(theForm) {
     var comment =""
     comment += theForm.Message.value;
     alert("Thank you for contacting me. Your message will be sent to my email!")
+    sendMail('Test Name',"xing8428082@gmail.com",'Test Subject','Test Message')
   }
 };
 </script>
@@ -343,7 +371,7 @@ const form_obj = {
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2023 Linda Celeste Berchtold. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: January 19, 2023.
+Last updated: January 20, 2023.
       </div>
     </footer>
 

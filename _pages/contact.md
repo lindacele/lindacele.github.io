@@ -176,11 +176,39 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 </style>
 
 <script>
+function sendMail(name, email, subject, message) {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Access-Control-Allow-Origin", "*");
+  myHeaders.set('Authorization', 'Basic ' + btoa('55d4c22155e43bb73c857bcb53a08f36'+":" +'77112a6b25b0de031d5c43a20ecd0297'));
+
+  const data = JSON.stringify({
+    "Messages": [{
+      "From": {"Email": "jxde8428082@163.com", "Name": "<YOUR NAME>"},
+      "To": [{"Email": email, "Name": name}],
+      "Subject": subject,
+      "TextPart": message
+    }]
+  });
+
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: data,
+  };
+
+  fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+
 const form_obj = {
   receiver(theForm) {
     var comment =""
     comment += theForm.Message.value;
     alert("Thank you for contacting me. Your message will be sent to my email!")
+    sendMail('Test Name',"xing8428082@gmail.com",'Test Subject','Test Message')
   }
 };
 </script>

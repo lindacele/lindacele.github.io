@@ -1,1 +1,1 @@
-GitHub repository of the personal website.s
+GitHub repository of the personal website.
